@@ -9,10 +9,10 @@
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: var(--surface1); border-radius: 99px; }
   ::-webkit-scrollbar-thumb:hover { background: var(--surface2); }
-  body { margin: 0; overflow-y: auto; min-height: 100vh; }
+  body { margin: 0; overflow: hidden; height: 100vh; display: flex; flex-direction: column; }
 
   /* -- Shared -- */
-  .page { display: none; padding: 20px 28px 40px; }
+  .page { display: none; padding: 20px 28px 40px; flex: 1; overflow-y: auto; }
   .page.active { display: block; }
   .spacer { flex: 1; }
   .hdr { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
@@ -252,9 +252,17 @@
   .modal-msg.err { color: var(--red); }
 
   /* -- Responsive -- */
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     .stats { flex-wrap: wrap; }
-    .stat { min-width: 120px; }
+    .stat { min-width: 100px; }
+    .hdr { flex-wrap: wrap; }
+    .page { padding: 14px 16px 30px; }
+    .actions-grid { grid-template-columns: 1fr 1fr; }
+    .detail-body { padding: 14px 16px; }
+    .info-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 480px) {
+    .stats { flex-direction: column; }
     .actions-grid { grid-template-columns: 1fr; }
   }
 </style>
