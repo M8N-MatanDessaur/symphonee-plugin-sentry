@@ -1,13 +1,25 @@
 {
   "id": "sentry",
   "name": "Sentry Error Tracker",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Monitor application errors via Sentry -- view issues, stack traces, trends, and create work items from errors",
   "icon": "bug",
   "tint": "226, 100, 80",
   "instructions": "instructions.md",
-  "aiKeywords": ["sentry", "error", "bug", "crash", "exception", "stack trace", "error tracking", "monitoring", "issues"],
-  "activationConditions": { "always": true },
+  "aiKeywords": [
+    "sentry",
+    "error",
+    "bug",
+    "crash",
+    "exception",
+    "stack trace",
+    "error tracking",
+    "monitoring",
+    "issues"
+  ],
+  "activationConditions": {
+    "always": true
+  },
   "settings": [
     {
       "key": "authToken",
