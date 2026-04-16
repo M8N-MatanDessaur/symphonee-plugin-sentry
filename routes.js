@@ -1,7 +1,7 @@
 /**
  * Sentry Error Tracker Plugin -- Server-side API Routes
  * Proxies the Sentry API for issue tracking, error trends, and stack traces.
- * Can create Azure DevOps work items from Sentry issues via the DevOps Pilot API.
+ * Can create Azure DevOps work items from Sentry issues via the Symphonee API.
  */
 const fs = require('fs');
 const path = require('path');

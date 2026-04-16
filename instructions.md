@@ -1,6 +1,6 @@
 ## Sentry Error Tracker Plugin -- AI Instructions
 
-You have access to a Sentry error tracking plugin via the DevOps Pilot API. This lets you monitor application errors, view stack traces, analyze error trends, and create Azure DevOps work items from Sentry issues.
+You have access to a Sentry error tracking plugin via the Symphonee API. This lets you monitor application errors, view stack traces, analyze error trends, and create Azure DevOps work items from Sentry issues.
 
 **All routes are at** `http://127.0.0.1:3800/api/plugins/sentry/`
 
@@ -122,7 +122,7 @@ Stats response is an array of `[timestamp, count]` pairs.
 - Issue IDs are numeric strings from Sentry
 - The `query` parameter supports Sentry search syntax (e.g., `is:unresolved`, `TypeError`, `level:error`)
 - Sort options: `freq` (frequency), `date` (last seen), `new` (first seen), `priority`
-- Creating work items calls the DevOps Pilot API internally -- the work item appears in Azure DevOps
+- Creating work items calls the Symphonee API internally -- the work item appears in Azure DevOps
 - Always ask the user for permission before resolving, ignoring, or creating work items from issues
 
 ### Opening in the Dashboard

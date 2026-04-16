@@ -1,4 +1,4 @@
-# Sentry Error Tracker -- DevOps Pilot Plugin
+# Sentry Error Tracker -- Symphonee Plugin
 
 Monitor application errors via the Sentry API. View issues, stack traces, error trends, and create Azure DevOps work items directly from Sentry errors.
 
@@ -14,8 +14,8 @@ Monitor application errors via the Sentry API. View issues, stack traces, error 
 
 ## Setup
 
-1. Copy this folder to `dashboard/plugins/sentry/` in your DevOps Pilot installation
-2. Open DevOps Pilot and go to **Settings > Plugins**
+1. Copy this folder to `dashboard/plugins/sentry/` in your Symphonee installation
+2. Open Symphonee and go to **Settings > Plugins**
 3. Configure:
    - **Auth Token** -- Sentry auth token (Settings > Auth Tokens in Sentry, needs `project:read`, `issue:read`, `issue:write` scopes)
    - **Organization** -- Your Sentry organization slug (from your Sentry URL, e.g. `my-org`)
@@ -51,5 +51,5 @@ All routes are prefixed with `/api/plugins/sentry/`.
 ## Requirements
 
 - Sentry account with API access
-- DevOps Pilot v1.0.0 or later
+- Symphonee v1.0.0 or later
 - Azure DevOps connection (for work item creation)
